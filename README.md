@@ -2,13 +2,13 @@
 
 **Lightweight DNS resolver - Not a dig, just a scoop.**
 
-ipspoon is a tiny CLI utility for quick DNS lookups, supporting both IPv4 and IPv6 lookup.
+ipspoon is a simple CLI utility for quick DNS lookups, supporting both IPv4 and IPv6 lookup.
 
 ## Setup
 ```
 sudo ./setup.sh
 ```
-requires GNU C Compiler Collection(GCC).
+requires GNU Compiler Collection(GCC).
 
 ## Usage
 ```bash
