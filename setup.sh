@@ -11,10 +11,15 @@ if [ ! -f "$SRC" ]; then
     exit 1
 fi
 
-gcc -o "$BIN_NAME" "$SRC"
+if [ ! -f "Makefile" ]; then
+    echo "Makefile not found!"
+    exit 1
+fi
+
+make
 echo "Compiled Successfully."
 
-mv -i "$BIN_NAME" "$INSTALL_PATH"
+sudo mv -f "$BIN_NAME" "$INSTALL_PATH"
 sudo chmod +x "$INSTALL_PATH"
 
 echo "Done setup!"
